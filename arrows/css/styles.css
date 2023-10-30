@@ -1,0 +1,142 @@
+*{
+  image-rendering: pixelated;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  font-family: monospace;
+  transition: 0.2s;
+  color: var(--4);
+  overflow:hidden;
+}
+
+:root{
+  --1: #dfdfe7;
+  --2: #494966;
+  --3: #191938;
+  --4: #0a0a15;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+#posDiv {
+    height: 60px;
+    min-width: 50px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    background-color: var(--1);
+    border: 3px var(--2) solid;
+    border-radius: 10px;
+}
+
+.display_pos{
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+}
+
+.display_pos p{
+    margin: auto 7px auto 7px;
+
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+#displaySpeed{
+    height: 35px;
+    min-width: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    display: flex;
+    background-color: var(--1);
+    border: 3px var(--2) solid;
+    border-radius: 10px;
+}
+
+#displaySpeed p{
+    margin: auto 7px auto 7px;
+
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+#aboutBtn{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    background-color: var(--1);
+    border: 3px var(--2) solid;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+#aboutBtn:hover {
+    background-color: var(--2);
+    border: 3px var(--3) solid;
+}
+
+#typesDiv {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, 0);
+    display: flex;
+}
+
+.ttt{
+    height: 70px;
+    width: 70px;
+    margin: 0 5px 0 5px;
+    position: relative;
+
+    background-color: var(--1);
+    border: 3px var(--2) solid;
+    border-radius: 10px;
+}
+
+.button_frame{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    border: 3px var(--2) solid;
+    border-radius: 10px;
+}
+
+.button_number{
+    height: 17px;
+    width: 17px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: var(--1);
+    border-top: 3px var(--2) solid;
+    border-right: 3px var(--2) solid;
+    border-top-right-radius: 5px;
+}
+
+.button_number p{
+    margin: auto;
+
+    font-size: 15px;
+}
